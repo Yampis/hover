@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-image: url(https://www.nasa.gov/sites/default/files/thumbnails/image/main_image_star-forming_region_carina_nircam_final-5mb.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.section{
+background-color: black;
+width: 500px;
+margin: 0 auto;
+color: aliceblue;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+.section_title {
+}
+
+.section_img {
+    width: 200px;
+}
+
+.section_text {
+}
+
+.section:nth-child(2){
+    background-color: aliceblue;
+    display: flex;
+    align-items: start;
+}
+
+.pictures {
+    width: 200px;
+    transition: 0.5s;
+}
+.pictures:nth-child(1){
+    opacity: 0;
+}
+.pictures:nth-child(3){
+    opacity: 0;
+}
+.section:nth-child(2):hover .pictures{
+    opacity: 1;
+    margin-left: 135px;
+}
